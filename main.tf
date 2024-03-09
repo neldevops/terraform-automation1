@@ -5,16 +5,23 @@
 #   name = "terraform-group"
 # }
 
+#**************************************************
+# Create IAM users 
+#**************************************************
+
+resource "aws_iam_user" "users" {
+  name     = var.usernames1
+}
 
 
 #**************************************************
 # Create IAM users using Count 
 #**************************************************
 
-resource "aws_iam_user" "users" {
-  count    = length(var.usernames)
-  name     = var.usernames[count.index]
-}
+# resource "aws_iam_user" "users" {
+#   count    = length(var.usernames)
+#   name     = var.usernames[count.index]
+# }
 
 #**************************************************
 # Add members to the group

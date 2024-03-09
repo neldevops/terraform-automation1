@@ -1,4 +1,4 @@
 # Define a list of usernames
-variable "usernames" {
-  default = ["nelson", "afam", "dike"]
+variable "usernames1" {
+  default = "nelson"
 }
