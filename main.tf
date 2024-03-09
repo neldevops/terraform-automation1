@@ -13,7 +13,7 @@ resource "aws_iam_user" "users" {
   name     = var.usernames1
 }
 
-resource "aws_iam_user" "users" {
+resource "aws_iam_user" "users2" {
   name     = var.usernames2
 }
 
