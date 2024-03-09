@@ -17,6 +17,9 @@ resource "aws_iam_user" "users2" {
   name     = var.usernames2
 }
 
+resource "aws_iam_user" "users3" {
+  name   = 'ben'
+}
 
 #**************************************************
 # Create IAM users using Count 
