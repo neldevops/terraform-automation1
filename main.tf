@@ -18,7 +18,7 @@ resource "aws_iam_user" "users2" {
 }
 
 resource "aws_iam_user" "users3" {
-  name   = 'ben'
+  name   = "ben"
 }
 
 #**************************************************
