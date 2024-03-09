@@ -26,7 +26,7 @@ pipeline {
 
         stage('terraform plan') {
             steps {
-                sh 'terraform plan -out=./plan-$RANDOM.sh'
+                sh 'terraform plan'
             }
         }
     
